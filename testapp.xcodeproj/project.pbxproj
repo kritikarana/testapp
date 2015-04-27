@@ -14,6 +14,10 @@
 		84C6FAF21AEC5DE200F6A9C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C6FAF11AEC5DE200F6A9C5 /* Images.xcassets */; };
 		84C6FAF51AEC5DE200F6A9C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C6FAF31AEC5DE200F6A9C5 /* LaunchScreen.xib */; };
 		84C6FB011AEC5DE200F6A9C5 /* testappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB001AEC5DE200F6A9C5 /* testappTests.m */; };
+		84C6FB0F1AEC7C7700F6A9C5 /* ReceiptController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB0E1AEC7C7700F6A9C5 /* ReceiptController.m */; };
+		84C6FB1F1AED2C3000F6A9C5 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB1E1AED2C3000F6A9C5 /* PickerView.m */; };
+		84C6FB221AED6B0200F6A9C5 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C6FB211AED6B0200F6A9C5 /* PickerView.xib */; };
+		84C6FB251AED80EC00F6A9C5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB241AED80EC00F6A9C5 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		84C6FAFA1AEC5DE200F6A9C5 /* testappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C6FAFF1AEC5DE200F6A9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C6FB001AEC5DE200F6A9C5 /* testappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testappTests.m; sourceTree = "<group>"; };
+		84C6FB0D1AEC7C7700F6A9C5 /* ReceiptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptController.h; path = ../ReceiptController.h; sourceTree = "<group>"; };
+		84C6FB0E1AEC7C7700F6A9C5 /* ReceiptController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptController.m; path = ../ReceiptController.m; sourceTree = "<group>"; };
+		84C6FB1D1AED2C3000F6A9C5 /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerView.h; path = ../PickerView.h; sourceTree = "<group>"; };
+		84C6FB1E1AED2C3000F6A9C5 /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerView.m; path = ../PickerView.m; sourceTree = "<group>"; };
+		84C6FB201AED3B5D00F6A9C5 /* PickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewDelegate.h; sourceTree = "<group>"; };
+		84C6FB211AED6B0200F6A9C5 /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PickerView.xib; path = ../PickerView.xib; sourceTree = "<group>"; };
+		84C6FB231AED80EC00F6A9C5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		84C6FB241AED80EC00F6A9C5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		84C6FB261AED8AB900F6A9C5 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +98,16 @@
 				84C6FAE91AEC5DE200F6A9C5 /* AppDelegate.m */,
 				84C6FAEB1AEC5DE200F6A9C5 /* ViewController.h */,
 				84C6FAEC1AEC5DE200F6A9C5 /* ViewController.m */,
+				84C6FB0D1AEC7C7700F6A9C5 /* ReceiptController.h */,
+				84C6FB0E1AEC7C7700F6A9C5 /* ReceiptController.m */,
+				84C6FB231AED80EC00F6A9C5 /* TableViewController.h */,
+				84C6FB241AED80EC00F6A9C5 /* TableViewController.m */,
+				84C6FB261AED8AB900F6A9C5 /* TableViewDelegate.h */,
 				84C6FAEE1AEC5DE200F6A9C5 /* Main.storyboard */,
+				84C6FB1D1AED2C3000F6A9C5 /* PickerView.h */,
+				84C6FB1E1AED2C3000F6A9C5 /* PickerView.m */,
+				84C6FB201AED3B5D00F6A9C5 /* PickerViewDelegate.h */,
+				84C6FB211AED6B0200F6A9C5 /* PickerView.xib */,
 				84C6FAF11AEC5DE200F6A9C5 /* Images.xcassets */,
 				84C6FAF31AEC5DE200F6A9C5 /* LaunchScreen.xib */,
 				84C6FAE41AEC5DE200F6A9C5 /* Supporting Files */,
@@ -199,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C6FB221AED6B0200F6A9C5 /* PickerView.xib in Resources */,
 				84C6FAF01AEC5DE200F6A9C5 /* Main.storyboard in Resources */,
 				84C6FAF51AEC5DE200F6A9C5 /* LaunchScreen.xib in Resources */,
 				84C6FAF21AEC5DE200F6A9C5 /* Images.xcassets in Resources */,
@@ -221,6 +244,9 @@
 			files = (
 				84C6FAED1AEC5DE200F6A9C5 /* ViewController.m in Sources */,
 				84C6FAEA1AEC5DE200F6A9C5 /* AppDelegate.m in Sources */,
+				84C6FB0F1AEC7C7700F6A9C5 /* ReceiptController.m in Sources */,
+				84C6FB1F1AED2C3000F6A9C5 /* PickerView.m in Sources */,
+				84C6FB251AED80EC00F6A9C5 /* TableViewController.m in Sources */,
 				84C6FAE71AEC5DE200F6A9C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +440,7 @@
 				84C6FB061AEC5DE200F6A9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84C6FB071AEC5DE200F6A9C5 /* Build configuration list for PBXNativeTarget "testappTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +449,7 @@
 				84C6FB091AEC5DE200F6A9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

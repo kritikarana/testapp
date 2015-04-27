@@ -7,8 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PickerViewDelegate.h"
+#import "TableViewDelegate.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <PickerViewDelegate, TableViewDelegate>{
+    
+    __weak IBOutlet UITextField *billTextField;
+    
+    __weak IBOutlet UILabel *tipLabel;
+    
+    __weak IBOutlet UILabel *splitLabel;
+    
+    __weak IBOutlet UITextField *tempTextField;
+
+    
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *perPersonLabel;
+
+- (IBAction)btnTapped:(id)sender;
 
 
 @end
