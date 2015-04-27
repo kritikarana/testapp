@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PickerView.h"
 #import "TableViewController.h"
+#import "ReceiptController.h"
 
 #define TIPPICKER_BTN 0
 #define SPLITPICKER_BTN 1
@@ -82,13 +83,27 @@
         
         
         [self performSegueWithIdentifier:@"showReceipt" sender:nil];
+        
+        
     }
     
     
     
 }
 
--(void) didSelectFromPickerView:(NSString *)value{
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ReceiptController *secondController=[segue destinationViewController];
+    
+    secondController.receiptBillLabelText=billTextField.text;
+    secondController.receiptTipLabelText=tipLabel.text;
+    secondController.receiptTotalLabelText=_totalLabel.text;
+    secondController.receiptSplitBetweenLabelText=splitLabel.text;
+    secondController.receiptPerPersonLabelText=_perPersonLabel.text;
+    
+
+}
+
+- (void) didSelectFromPickerView:(NSString *)value{
     NSLog(@"The value selected: %@ ", value);
     splitLabel.text=value;
 }

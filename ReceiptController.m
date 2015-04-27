@@ -14,20 +14,44 @@
 
 @implementation ReceiptController
 
+@synthesize receiptBillLabel;
+@synthesize receiptBillLabelText;
+
+@synthesize receiptTipLabel;
+@synthesize receiptTipLabelText;
+
+@synthesize receiptTotalLabel;
+@synthesize receiptTotalLabelText;
+
+@synthesize receiptSplitBetweenLabel;
+@synthesize receiptSplitBetweenLabelText;
+
+@synthesize receiptPerPersonLabel;
+@synthesize receiptPerPersonLabelText;
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    receiptBillLabel.text=receiptBillLabelText;
+   
+    receiptTipLabel.text=receiptTipLabelText;
+    
+    receiptTotalLabel.text=receiptTotalLabelText;
+    
+    receiptSplitBetweenLabel.text=receiptSplitBetweenLabelText;
+    
+    receiptPerPersonLabel.text=receiptPerPersonLabelText;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
-- (IBAction)displayReceiptButton:(id)sender {
-    
-    
-    
-}
+
+
 @end

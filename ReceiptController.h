@@ -10,17 +10,27 @@
 
 @interface ReceiptController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *receiptBillLabel;
+@property (strong, nonatomic) IBOutlet UILabel *receiptBillLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *receiptTipLabel;
+@property (strong, nonatomic) NSString * receiptBillLabelText;
 
-@property (weak, nonatomic) IBOutlet UILabel *receiptTotalLabel;
+@property (strong, nonatomic) IBOutlet UILabel *receiptTipLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *receiptSplitBetweenLabel;
+@property (strong, nonatomic) NSString * receiptTipLabelText;
 
-@property (weak, nonatomic) IBOutlet UILabel *receiptPerPersonLabel;
+@property (strong, nonatomic) IBOutlet UILabel *receiptTotalLabel;
 
-- (IBAction)displayReceiptButton:(id)sender;
+@property (strong, nonatomic) NSString * receiptTotalLabelText;
+
+@property (strong, nonatomic) IBOutlet UILabel *receiptSplitBetweenLabel;
+
+@property (strong, nonatomic) NSString * receiptSplitBetweenLabelText;
+
+@property (strong, nonatomic) IBOutlet UILabel *receiptPerPersonLabel;
+
+@property (strong, nonatomic) NSString * receiptPerPersonLabelText;
+
+
 
 @end
 
