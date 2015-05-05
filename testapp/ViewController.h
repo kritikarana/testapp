@@ -9,15 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "PickerViewDelegate.h"
 #import "TableViewDelegate.h"
+#import "DatePickerViewDelegate.h"
 
-
-@interface ViewController : UIViewController <PickerViewDelegate, TableViewDelegate>{
+@interface ViewController : UIViewController <PickerViewDelegate, TableViewDelegate, DatePickerViewDelegate>{
     
     __weak IBOutlet UITextField *billTextField;
     
     __weak IBOutlet UILabel *tipLabel;
     
     __weak IBOutlet UILabel *splitLabel;
+    
+    __weak IBOutlet UILabel *dateLabel;
     
     __weak IBOutlet UITextField *tempTextField;
 

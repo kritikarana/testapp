@@ -112,6 +112,29 @@
                                     <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIV-iR-LAq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMA-9V-XHZ">
+                                <rect key="frame" x="27" y="313" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX1-cu-4Gq">
+                                <rect key="frame" x="170" y="313" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-e0-d3z">
+                                <rect key="frame" x="274" y="304" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=">">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqf-vm-Lxv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27633655700092252" green="0.29266040301208229" blue="0.57218070652173914" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -119,6 +142,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="billTextField" destination="Ddz-vP-41I" id="NeR-Cf-wFb"/>
+                        <outlet property="dateLabel" destination="jX1-cu-4Gq" id="xgs-ZB-YNJ"/>
                         <outlet property="perPersonLabel" destination="KNh-ft-dob" id="bc8-9n-8cC"/>
                         <outlet property="splitLabel" destination="puo-b7-kbo" id="eO2-se-UQo"/>
                         <outlet property="tempTextField" destination="zRV-X2-13j" id="Q2u-Kx-yEV"/>
@@ -254,12 +278,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-LA-JPE">
+                                <rect key="frame" x="27" y="342" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40W-PS-NhU">
+                                <rect key="frame" x="217" y="342" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.31100166160244075" green="0.32937325632849113" blue="0.64395805027173914" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="receiptBillLabel" destination="laH-8v-azE" id="fYj-Mt-nng"/>
+                        <outlet property="receiptDateLabel" destination="40W-PS-NhU" id="gWu-nE-SE5"/>
                         <outlet property="receiptPerPersonLabel" destination="WHZ-Qe-cTL" id="pqH-Yt-xeh"/>
                         <outlet property="receiptSplitBetweenLabel" destination="n9I-dU-mdM" id="kAL-zo-oXp"/>
                         <outlet property="receiptTipLabel" destination="BDX-Mv-5qB" id="ucH-Fs-RPP"/>

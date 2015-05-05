@@ -30,6 +30,9 @@
 
 @property (strong, nonatomic) NSString * receiptPerPersonLabelText;
 
+@property (weak, nonatomic) IBOutlet UILabel *receiptDateLabel;
+
+@property (strong, nonatomic) NSString * receiptDateLabelText;
 
 
 @end

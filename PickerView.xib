@@ -7,11 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickerView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTa-XB-bef">
-                    <rect key="frame" x="0.0" y="59" width="320" height="216"/>
+                    <rect key="frame" x="0.0" y="42" width="320" height="216"/>
                     <color key="backgroundColor" red="0.90076415990000003" green="0.89902099410000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="g4g-Xp-YyT"/>
@@ -19,7 +19,7 @@
                     </connections>
                 </pickerView>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBF-BI-KJr">
-                    <rect key="frame" x="0.0" y="15" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="-2" width="320" height="44"/>
                     <items>
                         <navigationItem title="Split between people" id="4zm-HL-wGo">
                             <barButtonItem key="leftBarButtonItem" title="Done" id="bjU-v1-WOL">
@@ -36,7 +36,7 @@
             <connections>
                 <outlet property="pickerView" destination="CTa-XB-bef" id="5Yp-Pp-FcM"/>
             </connections>
-            <point key="canvasLocation" x="338" y="289.5"/>
+            <point key="canvasLocation" x="338" y="298"/>
         </view>
     </objects>
 </document>

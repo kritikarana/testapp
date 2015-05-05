@@ -10,10 +10,13 @@
 #import "PickerView.h"
 #import "TableViewController.h"
 #import "ReceiptController.h"
+#import "DatePickerView.h"
+
 
 #define TIPPICKER_BTN 0
 #define SPLITPICKER_BTN 1
 #define CALCULATE_BTN 2
+#define DATEPICKER_BTN 3
 
 
 
@@ -24,20 +27,17 @@
 
 @implementation ViewController
 
-//int tip;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]
-                                           initWithTarget:self
-                                           action:@selector(hideKeyBoard)];
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyBoard)];
     
-    [self.view addGestureRecognizer:tapGesture];    // Do any additional setup after loading the view, typically from a nib.
+    [self.view addGestureRecognizer:tapGesture];
+
 }
+
 -(void)hideKeyBoard {
     [billTextField resignFirstResponder];
-//    [totalTextField resignFirstResponder];
-//    [perPersonTextField resignFirstResponder];
     
 }
 
@@ -84,6 +84,16 @@
         
         [self performSegueWithIdentifier:@"showReceipt" sender:nil];
         
+    }else if (btn.tag==DATEPICKER_BTN){
+        
+        NSArray * dateBundleArray=[[NSBundle mainBundle] loadNibNamed:@"DatePickerView" owner:self options:nil];
+        DatePickerView * dateView=[dateBundleArray objectAtIndex:0];
+        
+        dateView.dateDelegate=self;
+        
+        tempTextField.inputView=dateView;
+        [tempTextField becomeFirstResponder];
+        
         
     }
     
@@ -99,10 +109,21 @@
     secondController.receiptTotalLabelText=_totalLabel.text;
     secondController.receiptSplitBetweenLabelText=splitLabel.text;
     secondController.receiptPerPersonLabelText=_perPersonLabel.text;
+    secondController.receiptBillLabelText=dateLabel.text;
     
-
 }
 
+- (void) didSelectFromDatePickerView:(NSString *)dateValue{
+    
+    NSLog(@"%s date is : %@",__PRETTY_FUNCTION__, dateValue);
+    dateLabel.text=dateValue;
+    [tempTextField resignFirstResponder];
+}
+
+- (void) datePickerDoneTapped{
+    NSLog(@"datePickerDoneTapped");
+    [tempTextField resignFirstResponder];
+}
 - (void) didSelectFromPickerView:(NSString *)value{
     NSLog(@"The value selected: %@ ", value);
     splitLabel.text=value;

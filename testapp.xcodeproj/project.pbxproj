@@ -18,6 +18,8 @@
 		84C6FB1F1AED2C3000F6A9C5 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB1E1AED2C3000F6A9C5 /* PickerView.m */; };
 		84C6FB221AED6B0200F6A9C5 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C6FB211AED6B0200F6A9C5 /* PickerView.xib */; };
 		84C6FB251AED80EC00F6A9C5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6FB241AED80EC00F6A9C5 /* TableViewController.m */; };
+		84D253D01AEEDC76009A9743 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D253CF1AEEDC76009A9743 /* DatePickerView.m */; };
+		84D253D21AEEDC86009A9743 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D253D11AEEDC86009A9743 /* DatePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		84C6FB231AED80EC00F6A9C5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		84C6FB241AED80EC00F6A9C5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		84C6FB261AED8AB900F6A9C5 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		84D253CE1AEEDC76009A9743 /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		84D253CF1AEEDC76009A9743 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
+		84D253D11AEEDC86009A9743 /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		84D253D31AEEE2DF009A9743 /* DatePickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,10 @@
 				84C6FB241AED80EC00F6A9C5 /* TableViewController.m */,
 				84C6FB261AED8AB900F6A9C5 /* TableViewDelegate.h */,
 				84C6FAEE1AEC5DE200F6A9C5 /* Main.storyboard */,
+				84D253CE1AEEDC76009A9743 /* DatePickerView.h */,
+				84D253CF1AEEDC76009A9743 /* DatePickerView.m */,
+				84D253D31AEEE2DF009A9743 /* DatePickerViewDelegate.h */,
+				84D253D11AEEDC86009A9743 /* DatePickerView.xib */,
 				84C6FB1D1AED2C3000F6A9C5 /* PickerView.h */,
 				84C6FB1E1AED2C3000F6A9C5 /* PickerView.m */,
 				84C6FB201AED3B5D00F6A9C5 /* PickerViewDelegate.h */,
@@ -224,6 +234,7 @@
 				84C6FB221AED6B0200F6A9C5 /* PickerView.xib in Resources */,
 				84C6FAF01AEC5DE200F6A9C5 /* Main.storyboard in Resources */,
 				84C6FAF51AEC5DE200F6A9C5 /* LaunchScreen.xib in Resources */,
+				84D253D21AEEDC86009A9743 /* DatePickerView.xib in Resources */,
 				84C6FAF21AEC5DE200F6A9C5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D253D01AEEDC76009A9743 /* DatePickerView.m in Sources */,
 				84C6FAED1AEC5DE200F6A9C5 /* ViewController.m in Sources */,
 				84C6FAEA1AEC5DE200F6A9C5 /* AppDelegate.m in Sources */,
 				84C6FB0F1AEC7C7700F6A9C5 /* ReceiptController.m in Sources */,

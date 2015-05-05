@@ -29,6 +29,8 @@
 @synthesize receiptPerPersonLabel;
 @synthesize receiptPerPersonLabelText;
 
+@synthesize receiptDateLabel;
+@synthesize receiptDateLabelText;
 
 
 
@@ -44,6 +46,8 @@
     receiptSplitBetweenLabel.text=receiptSplitBetweenLabelText;
     
     receiptPerPersonLabel.text=receiptPerPersonLabelText;
+    
+    receiptDateLabel.text=receiptDateLabelText;
 }
 
 - (void)didReceiveMemoryWarning {
